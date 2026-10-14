@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+# third-party data (IRIS-CPS has no license file); fetched at runtime
+experiments/saltelli_samples_3param_v6.csv
+results/e2_iris_rows.json
+.DS_Store

@@ -1,0 +1,141 @@
+{
+  "baseline": {
+    "eur": 13049.999999999998,
+    "main_team": "Product",
+    "verified": {
+      "ok": true,
+      "max_violation": 0.0,
+      "mc_violations": 0
+    },
+    "gap": 2.220446049250313e-16,
+    "levers": [
+      [
+        "Infra",
+        "shrink",
+        "shrink network jitter",
+        0.2917
+      ],
+      [
+        "Database",
+        "shrink",
+        "shrink query time",
+        0.1667
+      ],
+      [
+        "Product",
+        "relax",
+        "relax checkout <= 128 ms",
+        2.0
+      ]
+    ]
+  },
+  "unit": {
+    "eur": 2050.0,
+    "main_team": "Auth",
+    "verified": {
+      "ok": true,
+      "max_violation": 0.0,
+      "mc_violations": 0
+    },
+    "gap": 4.547473508864641e-13,
+    "levers": [
+      [
+        "Auth",
+        "shrink",
+        "shrink token check",
+        0.3
+      ],
+      [
+        "Gateway",
+        "shrink",
+        "shrink routing/TLS",
+        0.55
+      ],
+      [
+        "Auth",
+        "shift",
+        "shift- auth",
+        2.0
+      ]
+    ]
+  },
+  "proportional": {
+    "eur": 2050.0,
+    "main_team": "Auth",
+    "verified": {
+      "ok": true,
+      "max_violation": 0.0,
+      "mc_violations": 0
+    },
+    "gap": 0.0,
+    "levers": [
+      [
+        "Auth",
+        "shrink",
+        "shrink token check",
+        0.3
+      ],
+      [
+        "Gateway",
+        "shrink",
+        "shrink routing/TLS",
+        0.55
+      ],
+      [
+        "Auth",
+        "shift",
+        "shift- auth",
+        2.0
+      ]
+    ]
+  },
+  "pwl": {
+    "eur": 2466.666666666667,
+    "main_team": "Auth",
+    "verified": {
+      "ok": true,
+      "max_violation": 0.0,
+      "mc_violations": 0
+    },
+    "gap": 0.0,
+    "levers": [
+      [
+        "Infra",
+        "shrink",
+        "shrink network jitter",
+        0.1389
+      ],
+      [
+        "Database",
+        "shrink",
+        "shrink query time",
+        0.0417
+      ],
+      [
+        "Auth",
+        "shrink",
+        "shrink token check",
+        0.3
+      ],
+      [
+        "Gateway",
+        "shrink",
+        "shrink routing/TLS",
+        0.2583
+      ],
+      [
+        "Auth",
+        "shift",
+        "shift- auth",
+        2.0
+      ]
+    ]
+  },
+  "price_of_restriction": {
+    "Auth": 2700.0,
+    "Database": 0.0,
+    "Gateway": 300.00000000000045,
+    "Infra": 0.0,
+    "Product": 4.547473508864641e-13
+  }
+}
